@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorajaExplorer - Jasa Travel Tana Toraja</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-sans text-emerald-950 bg-amber-50 scroll-smooth">
+
+    <!-- 1. NAVBAR -->
+    <nav class="bg-emerald-700 text-amber-50 sticky top-0 z-30 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl tracking-wider">Toraja<span class="text-amber-300">Explorer</span></span>
+                </div>
+             
+                <div class="hidden md:flex space-x-6">
+                    <a href="#beranda" class="hover:text-amber-300 transition font-medium">Beranda</a>
+                    <a href="#tentang" class="hover:text-amber-300 transition font-medium">Tentang</a>
+                    <a href="#layanan" class="hover:text-amber-300 transition font-medium">Layanan & Paket</a>
+                    <a href="#testimoni" class="hover:text-amber-300 transition font-medium">Testimoni</a>
+                    <a href="#kontak" class="bg-amber-500 text-emerald-900 hover:bg-amber-400 px-4 py-1 rounded-full transition font-bold">Pesan Sekarang</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="text-amber-100 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <section id="beranda" class="relative h-screen min-h-[600px] flex items-center justify-center bg-cover bg-center" style="background-image: url('bg-hero.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-emerald-900/60"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-amber-50 mb-4 leading-tight">
+                Jelajahi Magisnya <br><span class="text-amber-400">Tana Toraja</span> Bersama Kami
+            </h1>
+            <p class="text-lg md:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+                Layanan perjalanan wisata budaya, alam, dan tradisi leluhur terlengkap di Dataran Tinggi Sulawesi Selatan. 
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kontak" class="bg-amber-500 text-emerald-900 hover:bg-amber-400 font-bold text-lg py-3 px-8 rounded-full shadow-lg transition transform hover:-translate-y-1">Mulai Petualangan</a>
+                <a href="#tentang" class="bg-emerald-800/50 hover:bg-emerald-800/80 backdrop-blur-sm border border-emerald-300 text-amber-50 font-bold text-lg py-3 px-8 rounded-full shadow-lg transition">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TENTANG (ABOUT) -->
+    <section id="tentang" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="01.jpg" alt="Wisata Budaya Toraja" class="rounded-2xl shadow-xl w-full h-auto object-cover max-h-[500px] border-4 border-amber-100">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Misi Kami Mengenalkan Toraja ke Dunia</h2>
+                <div class="w-16 h-1 bg-amber-500 mb-6"></div>
+                <p class="text-emerald-800 text-lg mb-4 leading-relaxed text-justify">
+                    TorajaExplorer hadir untuk memberikan pengalaman perjalanan yang autentik, aman, dan tak terlupakan. Kami percaya bahwa Tana Toraja bukan sekadar destinasi wisata, melainkan sebuah warisan peradaban yang harus dirasakan maknanya.
+                </p>
+                <p class="text-emerald-800 text-lg mb-6 leading-relaxed text-justify">
+                    Berbekal pemandu lokal berpengalaman, kami siap mengantarkan Anda menyusuri kemegahan Tongkonan, misteri makam batu Londa, hingga hamparan awan di puncak Lolai.
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="bg-amber-200 p-3 rounded-full shadow-sm">
+                        <span class="text-emerald-800 font-bold text-xl">10+</span>
+                    </div>
+                    <p class="font-medium text-emerald-900">Tahun Pengalaman Melayani Turis Domestik & Mancanegara</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FITUR & PILIHAN PAKET -->
+    <section id="layanan" class="py-20 bg-amber-100 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Bagian Mengapa Memilih Kami -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Mengapa Memilih Kami?</h2>
+                <p class="text-emerald-800 max-w-2xl mx-auto">Kami menjamin kenyamanan dan kepuasan liburan Anda dengan fasilitas terbaik.</p>
+            </div>
+            
+            <!-- Grid 2 Kolom untuk Fitur Umum -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-amber-200 text-center">
+                    <div class="text-5xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Pemandu Lokal Berpengalaman</h3>
+                    <p class="text-emerald-700">Dipandu langsung oleh putra asli daerah yang sangat memahami sejarah, aturan adat, dan rute rahasia terbaik.</p>
+                </div>
+               
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-amber-200 text-center">
+                    <div class="text-5xl mb-4">🚐</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Transportasi Pribadi Nyaman</h3>
+                    <p class="text-emerald-700">Armada kendaraan yang bersih, prima, dan ber-AC untuk menaklukkan rute pegunungan Toraja dengan aman.</p>
+                </div>
+            </div>
+
+            <!-- Bagian Pilihan Paket -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Pilihan Paket Wisata</h2>
+                <p class="text-emerald-800 max-w-2xl mx-auto">Temukan paket perjalanan yang paling sesuai dengan durasi dan gaya liburan Anda.</p>
+            </div>
+            
+          
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-amber-200 text-center">
+                    <div class="text-5xl mb-4">☕</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Paket Eksplorasi Alam & Kopi (3H2M)</h3>
+                    <p class="text-emerald-700">Nikmati panorama pegunungan di Lolai "Negeri di Atas Awan", diselingi kunjungan ke kebun kopi untuk mencicipi kopi asli Toraja.</p>
+                </div>
+              
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-amber-200 text-center">
+                    <div class="text-5xl mb-4">🏕️</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Paket Toraja Komplit (4H3M)</h3>
+                    <p class="text-emerald-700">Pengalaman menyeluruh mengunjungi ikon budaya Ke'te' Kesu', makam tebing kuno Londa, serta keindahan alam memukau.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-amber-200 text-center">
+                    <div class="text-5xl mb-4">✍️</div>
+                    <h3 class="text-xl font-bold text-emerald-900 mb-3">Custom Trip (Sesuai Permintaan)</h3>
+                    <p class="text-emerald-700">Bebas sesuaikan destinasi wisata, jadwal harian, dan budget liburan Anda tanpa ikatan rute yang kaku dari kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI -->
+    <section id="testimoni" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-emerald-900 mb-4">Apa Kata Mereka?</h2>
+            <p class="text-emerald-800 max-w-2xl mx-auto">Ribuan wisatawan telah mempercayakan perjalanan liburan mereka bersama TorajaExplorer.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl border border-amber-200 shadow-sm">
+                <div class="flex text-amber-500 mb-4">★★★★★</div>
+                <p class="text-emerald-800 italic mb-6">"Layanannya sangat memuaskan! Guide-nya ramah banget dan  saya dan teddy punya momen romantis"</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">BS</div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">Prabowo Subianto</h4>
+                        <p class="text-sm text-emerald-600">Keluarga dari Jakarta</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl border border-amber-200 shadow-sm">
+                <div class="flex text-amber-500 mb-4">★★★★★</div>
+                <p class="text-emerald-800 italic mb-6">"Trip ke Negeri di Atas Awan Lolai jadi momen magis. Mobil dijemput tepat waktu subuh-subuh. Sangat direkomendasikan!"</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">SW</div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">Sarah Wijaya</h4>
+                        <p class="text-sm text-emerald-600">Solo Traveler</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl border border-amber-200 shadow-sm">
+                <div class="flex text-amber-500 mb-4">★★★★★</div>
+                <p class="text-emerald-800 italic mb-6">"Fasilitas lengkap, harga transparan tanpa biaya tersembunyi. Toraja memang indah, dan agen travel ini bikin makin sempurna."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">MT</div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">Michael Tan</h4>
+                        <p class="text-sm text-emerald-600">Rombongan Kantor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FORM PENDAFTARAN / KONTAK -->
+    <section id="kontak" class="py-20 bg-amber-100 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-amber-200">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-emerald-900 mb-4">Rencanakan Perjalanan Anda</h2>
+                <p class="text-emerald-700">Tinggalkan pesan dan tim kami akan segera menghubungi Anda dengan penawaran terbaik.</p>
+            </div>
+            
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nama" class="block text-sm font-semibold text-emerald-900 mb-2">Nama Lengkap</label>
+                        <input type="text" id="nama" class="w-full bg-amber-50 border border-amber-300 rounded-lg px-4 py-3 text-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label for="hp" class="block text-sm font-semibold text-emerald-900 mb-2">Nomor WhatsApp</label>
+                        <input type="number" id="hp" class="w-full bg-amber-50 border border-amber-300 rounded-lg px-4 py-3 text-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" placeholder="Contoh: 08123456789">
+                    </div>
+                </div>
+                <div>
+                    <label for="paket" class="block text-sm font-semibold text-emerald-900 mb-2">Minat Paket Tur</label>
+                    <select id="paket" class="w-full bg-amber-50 border border-amber-300 rounded-lg px-4 py-3 text-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition">
+                       
+                        <option>Paket Eksplorasi Alam & Kopi (3H2M)</option>
+                        <option>Paket Toraja Komplit (4H3M)</option>
+                        <option>Custom Trip (Sesuai Permintaan)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pesan" class="block text-sm font-semibold text-emerald-900 mb-2">Catatan Tambahan</label>
+                    <textarea id="pesan" rows="4" class="w-full bg-amber-50 border border-amber-300 rounded-lg px-4 py-3 text-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" placeholder="Berapa orang yang ikut? Jadwal keberangkatan?"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-amber-50 font-bold text-lg py-4 rounded-lg shadow-md transition duration-300">
+                    Kirim Permintaan
+                </button>
+            </form>
+        </div>
+    </section>
+
+<!-- 8. FOOTER -->
+    <footer class="bg-emerald-900 text-emerald-100 py-12 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-bold text-2xl text-amber-50 tracking-wider">Toraja<span class="text-amber-400">Explorer</span></span>
+                <p class="mt-2 text-sm text-emerald-200">Mitra perjalanan wisata terbaik Anda di Tana Toraja.</p>
+            </div>
+            <div class="flex space-x-6 font-medium">
+                <a href="#" class="hover:text-amber-400 transition">Instagram</a>
+                <a href="#" class="hover:text-amber-400 transition">Facebook</a>
+                <a href="#" class="hover:text-amber-400 transition">WhatsApp</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-emerald-700 mt-8 pt-8 text-sm text-emerald-300">
+                   <p>&copy; 2026 Afdhol As Syamardi</p>
+                    <p>  Sistem Informasi</p>
+                    <p> H071251049</p>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
